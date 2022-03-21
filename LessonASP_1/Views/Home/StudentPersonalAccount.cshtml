@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model LessonASP_1.Models.Student
+<DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                 background:#C7FBA5;
+            }
+            .WebBody{
+                float:left;
+                display:block;
+                background:#B4FB86;
+                width:80%;
+                margin-left:10%;
+            }
+            .WebName{
+                float:left;
+                display:block;
+                background:#9AF75E;
+                width:100%;
+                height:150px;
+                margin-bottom:5px;
+            }
+            .ContextMenu{
+                float:left;
+                background:#9AF75E;
+                display:block;
+                width:20%; 
+                height:450px;
+            }
+            .Content{
+                float:left;
+                background:#9AF75E;
+                display:block;
+                width:80%;
+                min-height:1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="WebBody">
+            <div class="WebName">
+                 
+                    <h1>Студетн  @Model.Name</h1>
+                 
+                    
+            </div>
+            <div class="ContextMenu">
+            
+            </div>
+            <div class="Content">
+                <p> Имя: @Model.Name</p>
+                <p> Возраст:@Model.Age</p>
+                <p> Класс: @Model.Klass "@Model.CharKlass" </p>
+                <p> Описание ученика: </p>
+                  
+            </div>
+        </div>
+    </body>
+</html>
