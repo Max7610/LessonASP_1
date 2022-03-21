@@ -8,7 +8,7 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseDeveloperExceptionPage();
 }
 app.UseStaticFiles();
 
@@ -19,5 +19,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapAreaControllerRoute(
+    name: "Shop",
+    areaName:"Shop",
+    pattern: "{controller=Shop}/{action=Index}/{id?}");
+
 
 app.Run();
