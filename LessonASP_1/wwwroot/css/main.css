@@ -186,3 +186,9 @@ h3{
 .clr {
 	clear: both;
 }
+.bacgroundShopBox{
+	background:#868686;
+	float:left;
+	margin-bottom: 10px;
+	width:100%;
+}

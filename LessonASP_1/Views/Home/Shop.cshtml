@@ -1,59 +1,12 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
- <DOCTYPE HTML>
-<html lang="en">
-<head>
-	
-	<meta charset="utf-8"> 
-	<title>web</title>
-	<link href="~/css/main.css" rel="stylesheet" >
-</head>
-<body>
-<div id="page_aline" class="b3radius">
-	<div id="header">
-		<div id="header_nav">
-			<ul>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Библиотека</a></li>
-				<li><a href="#">Тесты</a></li>
-				<li><a href="#">Форум</a></li>
-				<li><a href="#">Статьи</a></li>
-				<li><a href="#">Автор</a></li>
-				
-			</ul>
-			@*<form method="" action"">
-				<a href="#"><img src="img/search.png" alt="Поиск по сайту" width="15" class="search_img f_right"></a><input type="text" name="topsearch" placeholder="Ищем что-то?" class="b3radius">  		*@			
-		</div>
-	<div id="header_cont">
-		<h1><span style="color: #98ca60" >Мир</span>Книг</h1>
-		<span class="h1dedcktiption">База знаний</span>
-		
-	</div>
-	
-	</div>
-	<div id="sidebar" class="f_left">
-		<ul>
-			<li><a href="#">Главная</a></li>
-			<li><a href="#">Каталог</a></li>
-			<li><a href="#">Карзина</a></li>
-			<li><a href="#">Личный кабинет</a></li>
-			
-			<a href="index.html#header"><img class="werh" src="~/img/3.png"></a>
-		</ul>
-	</div>
-
-	<div id="content" class="f_right">
-
-	</div>
-	<div class="clr"></div>
-
-
+﻿@model LessonASP_1.Models.Product
+<div class="bacgroundShopBox"> 
+    
+    <img src="~/img/@Model.NameIMG">
+    <div class="bacgroundShopBox"> @*class невидимка *@
+        <h2>@Model.Name</h2>
+        <p>Жанр:@Model.TGenre <br>
+           Цена:@Model.Prise руб <br>
+           Описание:@Model.Description
+        </p>
+    </div>
 </div>
-
-
-
-</body>
-</html>

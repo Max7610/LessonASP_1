@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="ViewsModels\" />
+    <Folder Include="wwwroot\Products\" />
   </ItemGroup>
 
 </Project>
